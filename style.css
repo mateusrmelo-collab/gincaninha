@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+header{
+    height: 10vh;
+    background-color: rgba(196, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #C40000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+Body{
+    height: 100vh;
+    background-image: url(https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_46_221130_2bf95fab-ba4b-4b99-8432-bd3de6232323_o.png&tipo=p);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background: rgba(196, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 0 25px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar.ativa {
+    left: 0;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #C40000;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1100;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+    background: #990000;
+}
+
+.sidebar nav {
+    margin-top: 40px;
+    flex: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #ff4d4d;
+    transform: translateX(5px);
+}
+
+.senai {
+    width: 140px;
+    margin-top: auto;
+    align-self: center;
+    opacity: 0.9;
+}
+
+ul h2{
+    padding-bottom: 10px;
+    color: white;
+}
+
+button{
+    margin: 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.box a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    height: 90vh;
+}
+
+.senai{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    z-index: 9;
+    top: 720px;
+    display: flex;
+    justify-self: center;
+}
+
+.box{
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    gap: 20px;
+    border-radius: 20px;
+    background: rgba(196, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.t{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certeza a{
+    color: aqua;
+}
+
+.certeza{
+    position: absolute;
+    width: 350px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(255, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    display: flex;
+}
+
+.bg{
+    position: absolute;
+    display: none;
+    z-index: 11;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 75%);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    animation: ap 0.8s ease;
+}
+
+.certeza {
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popup 0.3s forwards;
+}
+
+@keyframes popup {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bg2{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.bg2 h2{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.fecha{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.popup{
+    position: absolute;
+    width: 350px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 25px;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(255, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.opcao {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.s{
+    display: none;
+}
+
+.s .side{
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    left: -200px;
+    top: 120px;
+    transition: 1s ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    background-color: #C40000;
+    border-radius: 2em;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+button:hover{
+    transform: translateY(-5px) scale(1.05);
+    background-color: #990000;
+}
+
+.s .flecha img{
+    width: 85px;
+    height: 70px;
+}
+
+.s .arrow{
+    width: 250px;
+    height: 800px;
+    border-radius: 0px 2em 2em 0px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    background: rgba(196, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.s ul h2{
+    padding-bottom: 10px;
+    color: white;
+}
+
+.s button{
+    margin: 10px;
+}
+
+.s .side a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.s .senai{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    z-index: 9;
+    top: 720px;
+    display: flex;
+    justify-self: center;
+}
+
+.s ul{
+    list-style: none;
+}
+
+.s .side:hover{
+    left: 0px;
+}
+
+.s .arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tit{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.certeza p{
+    font-size: 15px;
+}
+
+.cliques{
+    display: flex;
+}
+
+
+.box a{
+    color: aqua;
+    text-decoration: underline;
+}
