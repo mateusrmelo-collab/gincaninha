@@ -20,7 +20,7 @@
                 <li><a href="index.php"><button>Início</button></a></li>
                 <li><a href="sobre.php"><button>Sobre</button></a></li>
                 <li><a href="modalidades.php"><button>Modalidades</button></a></li>
-                <li><a href="#"><button>Placar</button></a></li>
+                <li><a href="placar.php"><button>Placar</button></a></li>
                 <button class="abrirPrefs">Preferências</button>
             </ul>
         </nav>
@@ -73,7 +73,7 @@
                 <li><a href="index.php"><button>Início</button></a></li>
                 <li><a href="sobre.php"><button>Sobre</button></a></li>
                 <li><a href="modalidades.php"><button>Modalidades</button></a></li>
-                <li><a href="#"><button>Placar</button></a></li>
+                <li><a href="placar.php"><button>Placar</button></a></li>
                 <button class="abrirPrefs">Preferências</button>
                 </ul>
                 <img class="senai" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="">

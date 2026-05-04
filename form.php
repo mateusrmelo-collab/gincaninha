@@ -36,7 +36,6 @@ if ($_POST) {
     fwrite($arquivo, "Modalidade: " . $modalidade . "\n");
 
     fclose($arquivo);
-
 }
 ?>
     <form method="POST">

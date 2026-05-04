@@ -32,6 +32,10 @@ body::before {
     z-index: -1;
 }
 
+.cliques{
+    display: flex;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -159,27 +163,25 @@ main{
     justify-self: center;
 }
 
-.box{
-    width: 500px;
-    min-height: 400px;
+.popup{
+    position: absolute;
+    width: 350px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
     padding: 25px;
-    gap: 20px;
+    gap: 10px;
     border-radius: 20px;
-    background: rgba(196, 0, 0, 0.25);
+    background: rgba(255, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     color: white;
     transition: 0.3s ease;
-}
-
-.box:hover{
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
 
 .t{
@@ -192,37 +194,6 @@ main{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.certeza a{
-    color: aqua;
-}
-
-.certeza{
-    position: absolute;
-    width: 350px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 15px;
-    gap: 10px;
-    border-radius: 20px;
-    background: rgba(255, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    color: white;
-    transition: 0.3s ease;
-    z-index: 10;
 }
 
 .btn a{
@@ -270,38 +241,6 @@ main{
     justify-content: center;
     align-items: center;
     z-index: 2000;
-}
-
-.bg2 h2{
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.fecha{
-    border-top: 1px solid rgba(255,255,255,0.2);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.popup{
-    position: absolute;
-    width: 350px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 25px;
-    gap: 10px;
-    border-radius: 20px;
-    background: rgba(255, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    color: white;
-    transition: 0.3s ease;
-    z-index: 10;
 }
 
 .opcao {
@@ -414,12 +353,106 @@ button:hover{
     font-size: 15px;
 }
 
-.cliques{
-    display: flex;
+tr{
+    background-color: white;
+    color: black;
 }
 
+table{
+    height: 300px;
+    width: 400px;
+}
 
-.box a{
-    color: aqua;
-    text-decoration: underline;
+th{
+    background-color: #cc1717;
+    color: white;
+}
+
+.tt{
+    background-color: #cc1717;
+    color: white;
+}
+
+.bg2 h2{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.fecha{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formula{
+    background: rgba(235, 8, 8, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    width: 150px;
+}
+
+.btn button:hover{
+    background: #f53838;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+}
+
+form input, select{
+    height: 40px;
+    width: 400px;
+    border-radius: 2em;
+    border: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 100px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+.table{
+    background: rgba(235, 8, 8, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    height: 420px;
+    width: 500px;
 }
